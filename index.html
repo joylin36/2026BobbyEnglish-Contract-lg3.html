@@ -323,7 +323,6 @@
 <div class="page-container">
     <form id="contractForm" action="https://formsubmit.co/joy@bobbyenglishschool.com" method="POST" onsubmit="prepareSubmit(event)">
         <input type="hidden" name="_captcha" value="false">
-        <!-- 🔧 變更完成：主題改寫為 Let's Go 3 -->
         <input type="hidden" id="formSubject" name="_subject" value="【法律合約書回傳】Let's Go 3 兒童美語中級班">
         
         <!-- 🔒 雙簽章圖檔回收管道 -->
@@ -339,7 +338,6 @@
         <div class="page">
             <div class="contract-header">
                 <h1>私立巴比美語短期補習班 ｜ 短期補習服務報名表暨服務契約書</h1>
-                <!-- 🔧 變更完成：標題同步對齊 -->
                 <h2>Let's Go 3 兒童美語中級班</h2>
                 <h2 style="font-size: 13.5px; font-weight: bold; margin-top: 5px; opacity: 0.95;">Bobby English School - Enrollment Form & Service Contract</h2>
                 <p style="font-size: 11px; color: #666; margin: 10px 0 0 0;">(依據教育部短期補習班補習服務契約書範本與桃園市最新設立及管理法規制定-2026年9月最新核定版)</p>
@@ -358,12 +356,10 @@
                 <tbody>
                     <tr>
                         <th><span class="zh-title">選讀核定班別</span><span class="en-title">Enrolled Course</span></th>
-                        <!-- 🔧 變更完成：核定班別對齊 -->
                         <td style="font-weight: bold; color: var(--uci-blue); font-size: 13px;">Let's Go 3 兒童美語中級班</td>
                         <th><span class="zh-title">核定收費方案選擇</span><span class="en-title">Tuition Plan Option</span></th>
                         <td>
                             <select id="discountSelector" class="select-input" onchange="calculateContractBilling()">
-                                <!-- 🔧 變更完成：原價調整為 $36,252 -->
                                 <option value="1">標準常規原價方案 / Standard Plan ($36,252)</option>
                                 <option value="0.8">8折優惠方案 / 20% Off Promotion</option>
                                 <option value="0.85">85折優惠方案 / 15% Off Promotion</option>
@@ -375,14 +371,12 @@
                         <th><span class="zh-title">(1) 學費</span><span class="en-title">Tuition Fee</span></th>
                         <td id="td_tuition" style="font-weight: bold; color: var(--uci-blue);">NT$ 31,620 元</td>
                         <th><span class="zh-title">(2) 講義教材費</span><span class="en-title">Materials Fee</span></th>
-                        <!-- 🔧 變更完成：教材費同步調校為 $1,572 -->
                         <td style="font-weight: bold; color: var(--uci-blue);">NT$ 1,572 元</td>
                     </tr>
                     <tr>
                         <th><span class="zh-title">(3) 當期學雜費</span><span class="en-title">School Fees</span></th>
                         <td style="font-weight: bold; color: var(--uci-blue);">NT$ 3,060 元</td>
                         <th><span class="zh-title">核定繳費總金額(1)+(2)+(3)</span><span class="en-title">Grand Total (1)+(2)+(3)</span></th>
-                        <!-- 🔧 變更完成：總額同步對齊 $36,252 -->
                         <td id="td_total" style="font-weight: bold; color: #c00; font-size: 14px;">NT$ 36,252 元</td>
                     </tr>
                 </tbody>
@@ -391,28 +385,25 @@
             <div class="section-title">二、短期補習服務定型化契約應記載條款 / Short-Term Cram School Services Model Contract Provisions</div>
             <div class="legal-box" id="legalBoxContainer">
                 <div class="legal-item">
-                    <strong>前言：契約收受與審閱確認 / Preamble: Acknowledged Contract Review Period：</strong><br>
+                    <strong>前言：契約收受與審閱確認 / Preamble: Acknowledgment of Contract Review Period：</strong><br>
                     甲方確認於實際上課日前已收受本契約原本（或審閱本），並已攜回本契約原本審閱至少五日，充分理解並表示同意全部條款細則。<br>
                     <span class="legal-en">Party A confirms that the copy of this contract was taken home for review for at least five days prior to the official commencement of classes, and fully understands and agrees to all terms and conditions herein.</span>
                 </div>
                 <div class="legal-item">
                     <strong>第一條：就讀班級與班級性質 / Article 1: Class and Program Enrollment Type：</strong><br>
-                    <!-- 🔧 變更完成：第一條條文更換為 Let's Go 3 -->
                     1. 本契約核定就讀班級為：Let's Go 3 兒童美語中級班。<br>
-                    2. 本課程屬一般系統化正規美語教學進度班，非屬保證班（補習班未提供任何特定考取、分數擔保、退費退分等特定保證成效承諾）。<br>
+                    2. 本課程屬一般系統化正規美語教學進度班，非屬保證班（補習班未提供 any 特定考取、分數擔保、退費退分等特定保證成效承諾）。<br>
                     <span class="legal-en">1. The approved program under this contract is: Let's Go 3 Children's English Intermediate Class.<br>2. This course is a regular systematic progression program and is NOT a "guaranteed success" or "warranty" program (No promises of passing specific exams or special guarantee outcome commitments shall apply).</span>
                 </div>
                 <div class="legal-item">
                     <strong>第二條：修業期間與插班計費規範 / Article 2: Study Period and Pro-Rata Later Enrollment Policy：</strong><br>
-                    <!-- 🎯 🔧 完美焊接：實際開課日期鎖定 8 月 31 日，全期共 51 堂課 -->
                     1. 本期核定修業期間自民國115年08月31日正式開課起，至該班當期排定課程總堂數（51堂課）結束止。<br>
                     2. 課程開始後報名插班者，應以實際報名後之最近一次上課日作為開課日（未填列時以甲方實際第一次上課日為準），並以該課程當期剩餘期間及未上課時數，依比例計費收取費用。<br>
                     <span class="legal-en">1. The term of study commences on the official start date of August 31, 2026, until the scheduled conclusion of the entire semester program lessons.<br>2. For students enrolling after the course has commenced, the immediate next actual class date after formal registration shall be deemed the official start date, and fees shall be calculated pro-rata based on the remaining lessons and period.</span>
                 </div>
                 <div class="legal-item">
                     <strong>第三條：課程科目、內容與授課時數 / Article 3: Course Subjects, Content, and Timetable Hours：</strong><br>
-                    <!-- 🎯 🔧 核心大改寫：科目改寫為 Let's Go 3 核定內容，上課時段完美精準校正 -->
-                    1. 課程科目與核心內容：Let's Go 3 美語教學（涵蓋 Phonics 自然發音進階、生活情境對話、聽說讀寫、英檢練習訓練）。<br>
+                    1. 課程科目與核心內容：Let's Go 3 美語教學（涵蓋 Phonics 自然發音進階、生活情境對話、聽說讀寫、英檢練習訓練）[cite: 2]。<br>
                     2. 每週授課時數與時間：時數、班別與時間依據所選班級對應之課表（每週一 下午 4:30 - 6:30 p.m. / 每週三、五 下午 1:30 - 3:30 p.m.）辦理[cite: 2]。<br>
                     <span class="legal-en">1. Course Subjects and Core Content: Let's Go 3 English Thinking (including advanced phonics, situational dialogues, listening, speaking, reading, writing, and intensive test preparation training)[cite: 2].<br>2. Weekly Hours: The weekly schedule and class hours shall correspond strictly to the official class timetable designated for the selected course (Every Monday 4:30 - 6:30 p.m. & Every Wednesday and Friday 1:30 - 3:30 p.m.)[cite: 2].</span>
                 </div>
@@ -423,7 +414,6 @@
                 </div>
                 <div class="legal-item">
                     <strong>第五條：收費項目、金額與禁止不當收費 / Article 5: Fee Items, Grand Total, and Receipt Requirements：</strong><br>
-                    <!-- 🔧 變更完成：法規原價調校為 $36,252 -->
                     1. 本期核定收費費用包含基本學費、教材講義費及當期學雜費，當期實際應繳總金額以本合約第一項動態計算扣除優惠減免後之實際金額為準（目前核定原價總額為新台幣 <span id="legal_total_zh" style="font-weight:bold; color:#c00;">36,252</span> 元）。<br>
                     2. 未明列於契約內之項目，乙方不得收取。所有收取費用乙方應開立正式收據交予甲方。<br>
                     <span class="legal-en">1. The tuition and fees consist of Base Tuition, Textbooks/Materials, and Fees, and the total payment shall be based on the actual Grand Total dynamically computed under Section 1 after discount deductions.<br>2. Party B shall not collect any fee items that are not explicitly specified herein under any pretext. Official receipts must be issued for all fees collected.</span>
@@ -436,7 +426,7 @@
                     (3) 實際開課日起5日內要求退費者：退還依約繳納費用總額之百分之八十（80%）。<br>
                     (4) 實際開課日起之第六日，至全期或總課程時數之三分之一期間內要求退費者：退還依約繳納費用總額之百分之五十（50%）。<br>
                     (5) 已逾全期或總課程時數之三分之一者：所收取之當期費用得全數不予退還。<br>
-                    (6) 代辦之教材費若已購置並已發放予甲方者，該項目不予退還，教材歸甲方所有。<br>
+                    (6) 代辦之教材費若已購置並已發放予甲方者，不予退還，教材歸甲方所有。<br>
                     <span class="legal-en">In accordance with the Taoyuan City Cram School Refund Regulations, refunds shall be processed within 7 days based on the following:<br>(1) Requested 30 days or more before start date: Full 100% refund of total fees paid.<br>(2) Requested within 1 to 29 days before start date: 90% refund of total fees paid (the amount retained by school is capped at NT$1,000, excess must be refunded).<br>(3) Requested within 5 days from the start date: 80% refund of total fees paid.<br>(4) Requested from the 6th day until 1/3 of total course term: 50% refund of total fees paid.<br>(5) Requested after 1/3 of total course term: Fees collected may be entirely non-refundable.<br>(6) Issued materials or textbooks are non-refundable and belong to the student.</span>
                 </div>
                 <div class="legal-item">
@@ -459,12 +449,12 @@
                     <span class="legal-en">1. Party A authorizes Party B to take photos and videos during regular classes or holiday events, and reasonably use the images for internal achievement displays or official website promotional marketing, provided it doesn't harm the student's reputation.<br>2. Party B must strictly handle all personal data in full compliance with the Personal Data Protection Act solely for academic administration, safety, and urgent communication. Disclosing data to third parties is strictly prohibited.</span>
                 </div>
                 <div class="legal-item">
-                    <strong>第十條：違規行為處置、秩序維護與契約終止 / Article 10: Student Conduct, Classroom Order, and Termination：</strong><br>
+                    <strong>第十條：違規行為處置與班級秩序終止 / Article 10: Termination and Student Conduct：</strong><br>
                     學員於修業期間應共同維護課堂秩序與安全。若有嚴重干擾他人學習、惡意破壞公共設施、侵害違法行為且屢勸不聽者，為維護全班學員安全防線，乙方得單方面終止本契約，並依第六條退費條款辦理剩餘款項退費手續。<br>
                     <span class="legal-en">Students must strictly maintain classroom order and safety. For severe disruptions endangering others, malicious vandalism, or illegal acts where repeated counseling fails, Party B reserves the right to unilaterally terminate this contract to secure class safety, issuing refunds according to Article 6.</span>
                 </div>
                 <div class="legal-item">
-                    <strong>第十一條：法律疑義解釋、保存期限與爭議管轄 / Article 11: Legal Interpretation, Preservation Term, and Jurisdiction：</strong><br>
+                    <strong>第十一條：法律疑義解釋、保存期限與爭議管轄 / Article 11: Interpretation, Duplicates, and Preservation Term：</strong><br>
                     1. 本契約各條款如有疑義時，應依據《消費者保護法》第十一條第二項規定，採取最有利於消費者（甲方）之方向進行法律解釋。<br>
                     2. 本契約一式二份，由甲乙雙方各執一份為憑，自家長簽約日起生效。雙方合意合約保存期限不得少於五年，以備查核。<br>
                     <span class="legal-en">1. In case of doubts regarding contract clauses, interpretations shall lean in favor of the consumer (Party A) based on Article 11, Paragraph 2 of the Consumer Protection Act.<br>2. This contract is executed in duplicate, with each party holding one copy as evidence. Both parties agree that the contract preservation period shall be at least 5 years for compliance review.</span>
@@ -472,11 +462,11 @@
             </div>
 
             <div class="agreement-banner">
-                本人已詳細閱讀、理解並完全同意上述所有巴比美語短期補習服務條款。雙方於下方完成親筆電子簽章，即代表完全承認並代為履行本契約之所有法律權利與義務。
+                本本人已詳細閱讀、理解並完全同意上述所有巴比美語短期補習服務條款。雙方於下方完成親筆電子簽章，即代表完全承認並代為履行本契約之所有法律權利與義務。
                 <span style="font-size: 11px; font-weight: normal; display: block; margin-top: 3px; font-style: italic;">I have read, understood, and fully agreed to all terms. Electronic signatures below imply full execution of all rights under this contract.</span>
             </div>
 
-            <!-- 👑 雙軌親筆電子簽名區 -->
+            <!-- 雙軌親筆電子簽名區 -->
             <div class="dual-signature-row">
                 <!-- 左邊：家長簽名區 (48%) -->
                 <div class="signature-block">
@@ -549,7 +539,7 @@ parentCanvas.addEventListener('touchmove', function(e) {
     var t = e.touches[0]; var rect = parentCanvas.getBoundingClientRect();
     draw(parentCtx, t.clientX - rect.left, t.clientY - rect.top);
 }, {passive: true});
-parentCanvas.addEventListener('toucheng', function() { isDrawingParent = false; parentCtx.beginPath(); });
+parentCanvas.addEventListener('touchend', function() { isDrawingParent = false; parentCtx.beginPath(); });
 
 staffCanvas.addEventListener('mousedown', function(e) { isDrawingStaff = true; hasSignedStaff = true; draw(staffCtx, e.offsetX, e.offsetY); });
 staffCanvas.addEventListener('mousemove', function(e) { if(isDrawingStaff) draw(staffCtx, e.offsetX, e.offsetY); });
@@ -565,7 +555,7 @@ staffCanvas.addEventListener('touchmove', function(e) {
     var t = e.touches[0]; var rect = staffCanvas.getBoundingClientRect();
     draw(staffCtx, t.clientX - rect.left, t.clientY - rect.top);
 }, {passive: true});
-staffCanvas.addEventListener('toucheng', function() { isDrawingStaff = false; staffCtx.beginPath(); });
+canvas.addEventListener('touchend', function() { isDrawingStaff = false; staffCtx.beginPath(); });
 
 function draw(context, x, y) {
     context.lineTo(x, y);
@@ -584,11 +574,11 @@ function clearSig(target) {
     }
 }
 
-// ===== 智慧折數百分比動態算帳大腦（🔧 完美重組為 Let's Go 3 數據庫） =====
+// ===== 智慧折數百分比動態算帳大腦 =====
 function calculateContractBilling() {
     var discountRatio = parseFloat(document.getElementById('discountSelector').value);
     var originalTuition = 31620;
-    var materialsFee = 1572; // 🔧 變更為 Let's Go 3 教材費
+    var materialsFee = 1572; 
     var schoolMiscFee = 3060;
     
     var finalTuition = Math.round(originalTuition * discountRatio);
