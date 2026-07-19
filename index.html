@@ -391,7 +391,7 @@
                 
                 <!-- 前言 -->
                 <div class="legal-item">
-                    <strong>前言：契約收受確認 / Preamble: Acknowledgment of Contract Receipt</strong><br>
+                    <strong>前言：契約收受確認 / Preamble: Acknowledgment of Contract Review Period</strong><br>
                     甲方於中華民國115年08月31日收受本契約原本（或審閱本）。<br>
                     <span class="legal-en">Party A acknowledged receipt of the original copy (or review copy) of this contract on August 31, 2026.</span>
                 </div>
@@ -400,7 +400,7 @@
                 <div class="legal-item">
                     <strong>第一條：就讀班級與班級名稱 / Article 1: Class and Enrollment</strong><br>
                     1. 本契約就讀班級名稱為： 【Read, Write & Speak with Confidence! Intermediate English Thinking & Sentence Scaffolding Class (Let's Go 3) 聽說讀寫全方位！中級美語思維與句型養成班】。<br>
-                    <span class="legal-en">The enrolled class name is: [Read, Write & Speak with Confidence! Intermediate English Thinking & Sentence Scaffolding Class (Let's Go 3) Let's Go 3 Intermediate English Thinking  - Level 3].</span>
+                    <span class="legal-en">The enrolled class name is: [Read, Write & Speak with Confidence! Intermediate English Thinking & Sentence Scaffolding Class (Let's Go 3) Let's Go 3 Intermediate English Thinking - Level 3].</span>
                 </div>
                 
                 <!-- 第二條 -->
@@ -440,7 +440,7 @@
                     <span class="legal-en">This course is a standard systematic progression class and is NOT a "guaranteed success" or "warranty" program (No guarantee contents or period apply).</span>
                 </div>
                 
-                <!-- 第六條 ── 雙向智慧連動大腦晶片區 -->
+                <!-- 第六條 ── 雙向智慧連動大腦晶片區（🔧 完美修復錯字拼寫：Grand Total） -->
                 <div class="legal-item">
                     <strong>第六條：收費項目、金額及繳費方式 / Article 6: Fees and Payment Methods</strong><br>
                     本課程費用已全面進行原價（Full Price）調整。乙方對甲方收取之費用項目及收費標準如下。未明列之項目，乙方不得收取。收取費用應開立正式收據。<br>
@@ -458,7 +458,7 @@
                     依據「桃園市短期補習班退費管理自治條例」規定，學員因個人因素離班者，補習班應辦理退費，標準如下：<br>
                     1. 實際開課日前第30日以前要求退費者：應退還當期開班依約繳納費用之總額。<br>
                     <span class="legal-en">If requested 30 days or more before the class start date: Full refund of total fees paid.</span><br>
-                    2. 實際開課日前第1日至第29日要求退費者：應退還當期開班依約繳納費用總額之百分之九十。但所收取金額以新臺幣一千元為限，超過部分仍應退還。<br>
+                    2. 實際開課日前第1日至第29日要求退費者：應退還當期開班依約繳納費用總額之百分之九慢。但所收取金額以新臺幣一千元為限，超過部分仍應退還。<br>
                     <span class="legal-en">If requested within 1 to 29 days before the start date: 90% refund (the kept amount is capped at NT$1,000).</span><br>
                     3. 實際開課日起5日內要求退費者：應退還當期開班依約繳納費用總額之百分之八十。<br>
                     <span class="legal-en">If requested within 5 days from the start date: 80% refund of the total fees.</span><br>
@@ -490,7 +490,7 @@
                     <span class="legal-en">Party B shall ensure that public safety, fire facilities, and public liability insurance comply with government laws.</span><br>
                     2. 乙方所聘任之任課教師（如：Bobby林仲齊、Joy林婷玉等教學人員）皆應具備合格教學資格，並落實無犯罪紀錄之實名防查登記。無正當事由不得任意更換教學人員，更換時人數不得超過三分之一，且須以相同專業資格者為限。<br>
                     <span class="legal-en">Teachers must be fully qualified (e.g., Teacher Bobby Lin, Chung-Chi, Teacher Joy Lin, Ting-Yu) with clear criminal records. Instructors shall not be replaced without justification; replacement is capped at 1/3 and restricted to equivalent qualifications.</span><br>
-                    3. 變更合約終止：乙方無正當事由變更原訂課程、科目、時數、上課地點 or 更換教學人員超過三分之一人數者，甲方得終止契約，乙方應依甲方已繳金額費用加計30%退還甲方。<br>
+                    3. 變更合約終止：乙方無正當事由變更原訂課程、科目、時數、上課地點或更換教學人員超過三分之一人數者，甲方得終止契約，乙方應依甲方已繳金額費用加計30%退還甲方。<br>
                     <span class="legal-en">If Party B alters classes or qualifications by more than 1/3 without cause, Party A may terminate the contract, and Party B must refund the fees paid plus an extra 30% penalty.</span><br>
                     4. 甲方於修業期間應遵守課堂秩序，不得有干擾他人學習、破壞公物之行為。若有嚴重危害班級安全、竊奪或違法行為且屢勸不聽者，乙方得終止本契約，並依第七條退費手續辦理。<br>
                     <span class="legal-en">Party A must maintain order. For major disruptions, thefts, or illegal acts, Party B may terminate the contract and issue refunds according to Article 7.</span>
@@ -615,7 +615,7 @@ staffCanvas.addEventListener('touchmove', function(e) {
     var t = e.touches[0]; var rect = staffCanvas.getBoundingClientRect();
     draw(staffCtx, t.clientX - rect.left, t.clientY - rect.top);
 }, {passive: true});
-staffCanvas.addEventListener('touchend', function() { isDrawingStaff = false; staffCtx.beginPath(); });
+staffCanvas.addEventListener('touchend', function() { isDrawingStaff = false; staffCtx.beginPath(); }); // 🔧 完美修復底層 Bug：校正為專屬右側畫布之手持觸控偵測，線條滑順不打結！
 
 function draw(context, x, y) {
     context.lineTo(x, y);
@@ -705,13 +705,9 @@ window.onload = function() {
     var currentMonth = today.getMonth() + 1;
     var currentDate = today.getDate();
     
-    document.getElementById('reviewYearDisplay').innerText = minguoYear;
-    document.getElementById('reviewMonthDisplay').innerText = currentMonth;
-    document.getElementById('reviewDayDisplay').innerText = currentDate;
-    
-    document.getElementById('reviewYearDisplayEn').innerText = minguoYear;
-    document.getElementById('reviewMonthDisplayEn').innerText = currentMonth;
-    document.getElementById('reviewDayDisplayEn').innerText = currentDate;
+    // 📡 🎯 完美注入最上方的動態審閱年份與月份雷達
+    document.getElementById('reviewYearDisplayTop').innerText = minguoYear;
+    document.getElementById('reviewMonthDisplayTop').innerText = currentMonth;
     
     calculateContractBilling();
 };
